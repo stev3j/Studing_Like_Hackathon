@@ -1,4 +1,4 @@
-package com.example.newenginebing.ui.theme
+package com.example.newenginebing.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
