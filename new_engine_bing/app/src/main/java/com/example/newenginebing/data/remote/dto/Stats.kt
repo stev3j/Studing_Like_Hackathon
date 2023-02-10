@@ -1,5 +1,8 @@
 package com.example.newenginebing.data.remote.dto
 
+
+import com.google.gson.annotations.SerializedName
+
 data class Stats(
     val contributors: Int,
     val followers: Int,

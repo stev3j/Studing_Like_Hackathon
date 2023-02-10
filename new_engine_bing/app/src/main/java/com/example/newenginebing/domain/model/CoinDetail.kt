@@ -1,6 +1,6 @@
 package com.example.newenginebing.domain.model
 
-import com.example.newenginebing.data.remote.dto.*
+import com.example.newenginebing.data.remote.dto.TeamMember
 
 data class CoinDetail(
     val coinId: String,
@@ -10,5 +10,5 @@ data class CoinDetail(
     val rank: Int,
     val isActive: Boolean,
     val tags: List<String>,
-    val team: List<TeamMember>,
+    val team: List<TeamMember>
 )
