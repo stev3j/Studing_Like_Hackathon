@@ -1,4 +1,4 @@
-package com.example.gitsta.ui.theme
+package com.example.gitsta.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

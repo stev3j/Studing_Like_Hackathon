@@ -1,4 +1,4 @@
-package com.example.gitsta.ui.theme
+package com.example.gitsta.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
