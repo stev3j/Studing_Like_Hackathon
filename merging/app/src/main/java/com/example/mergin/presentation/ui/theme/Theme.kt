@@ -1,4 +1,4 @@
-package com.example.mergin.ui.theme
+package com.example.mergin.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
