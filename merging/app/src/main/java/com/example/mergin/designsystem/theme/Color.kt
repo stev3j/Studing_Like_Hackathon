@@ -1,4 +1,4 @@
-package com.example.mergin.presentation.ui.theme
+package com.example.mergin.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 
