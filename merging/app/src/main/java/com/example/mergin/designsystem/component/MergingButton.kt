@@ -15,12 +15,16 @@ import com.example.mergin.designsystem.theme.WhiteColor
 
 @Composable
 fun MergingButton(
+    enabled: Boolean,
     content: @Composable () -> Unit
 ) {
     Button(
-        modifier = Modifier.fillMaxWidth().height(50.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(50.dp),
         shape = RoundedCornerShape(10),
         elevation = ButtonDefaults.elevation(0.dp, 0.dp, 0.dp, 0.dp, 0.dp),
+        enabled = enabled,
         colors = ButtonDefaults.buttonColors(
             backgroundColor = MainColor,
             contentColor = WhiteColor,
@@ -41,17 +45,35 @@ fun MergingButton(
 @Composable
 @Preview(showBackground = true)
 fun Preview() {
-    MergingButton(
-        content = {
-            Surface(
-                shape = CircleShape,
-                color = WhiteColor,
-                modifier = Modifier
-                    .height(30.dp)
-                    .width(30.dp)
-            ) {}
-            Spacer(modifier = Modifier.width(10.dp))
-            Text(text = "Log in with Github", color = WhiteColor)
-        }
-    )
+    Column(modifier = Modifier.padding(16.dp)) {
+        MergingButton(
+            enabled = true,
+            content = {
+                Surface(
+                    shape = CircleShape,
+                    color = WhiteColor,
+                    modifier = Modifier
+                        .height(30.dp)
+                        .width(30.dp)
+                ) {}
+                Spacer(modifier = Modifier.width(10.dp))
+                Text(text = "Log in with Github", color = WhiteColor)
+            }
+        )
+        Spacer(modifier = Modifier.height(10.dp))
+        MergingButton(
+            enabled = false,
+            content = {
+                Surface(
+                    shape = CircleShape,
+                    color = WhiteColor,
+                    modifier = Modifier
+                        .height(30.dp)
+                        .width(30.dp)
+                ) {}
+                Spacer(modifier = Modifier.width(10.dp))
+                Text(text = "Log in with Github", color = WhiteColor)
+            }
+        )
+    }
 }
