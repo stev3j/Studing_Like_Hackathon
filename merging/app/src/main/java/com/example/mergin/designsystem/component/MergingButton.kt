@@ -16,6 +16,7 @@ import com.example.mergin.designsystem.theme.WhiteColor
 @Composable
 fun MergingButton(
     enabled: Boolean,
+    onClick: () -> Unit,
     content: @Composable () -> Unit
 ) {
     Button(
@@ -31,7 +32,7 @@ fun MergingButton(
             disabledBackgroundColor = ContainerColor,
             disabledContentColor = WhiteColor
         ),
-        onClick = { /*TODO*/ }
+        onClick = onClick
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -48,6 +49,7 @@ fun Preview() {
     Column(modifier = Modifier.padding(16.dp)) {
         MergingButton(
             enabled = true,
+            onClick = {},
             content = {
                 Surface(
                     shape = CircleShape,
@@ -63,6 +65,7 @@ fun Preview() {
         Spacer(modifier = Modifier.height(10.dp))
         MergingButton(
             enabled = false,
+            onClick = {},
             content = {
                 Surface(
                     shape = CircleShape,
